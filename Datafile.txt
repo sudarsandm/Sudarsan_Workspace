@@ -1,0 +1,8 @@
+This is a text file used for a perl program which is used to count the number 
+of words in a data text file. This text file is especially used for this
+purpose. This text file will be used a Perl program, which uses concepts from
+file handling and simple regex operations to achieve the objective. This text
+file is specifically used for this purpose. Instead of writing the traditional
+poem.txt which is quite often used for this purpose, the user has chosen to
+use this text file for this specific purpose. This program should be one such
+milestone in his Perl's programming expertise aquisition.
