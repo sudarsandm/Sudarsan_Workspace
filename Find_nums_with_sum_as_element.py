@@ -13,6 +13,7 @@ else:
 
 index = []
 list1.sort()
+print(list1)
 
 while(start <= end):
     base = start + 1
@@ -24,8 +25,5 @@ while(start <= end):
         else:
             base += 1
     start += 1
-    
-
-    
-    
-    
+for x in index:
+	print(x)
