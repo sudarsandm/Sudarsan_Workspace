@@ -2,8 +2,13 @@
 # numbers  which equate to a sum. The sum will be part of 
 # the list.
 import timeit
+import sys
 list1 = [0,2,3,4,5,6,7,8,9]
-sum = int(input("Enter the sum to found:"))
+sum = int(sys.argv[1])
+
+# check if sum is not part of the list
+if(list1.count(sum) == 0):
+  exit("value not in the list") 
 start = 0
 # We will not look for the indices until the end of ths list
 if(sum < int(max(list1))):
