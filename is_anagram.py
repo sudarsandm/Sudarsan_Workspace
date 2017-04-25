@@ -16,3 +16,5 @@ def is_anagram(s1,s2):
 		
 print("Test code runs here...\n")
 print(is_anagram('S  i  Ri','I r    iS'))
+print(is_anagram('clint eastwood','old west action'))
+print(is_anagram('public relations','crap built on lies'))
