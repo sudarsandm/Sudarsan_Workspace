@@ -8,13 +8,12 @@ sum = int(sys.argv[1])
 
 # check if sum is not part of the list
 if(list1.count(sum) == 0):
-  exit("value not in the list") 
+  exit("value not in the list")
+elif sum == min(list1):
+  exit("Entered value is the least value")
+
 start = 0
-# We will not look for the indices until the end of ths list
-if(sum < int(max(list1))):
-   end = int(max(list1)/2) + 1
-else:
-    end = len(list1) - 1
+end = len(list1) - 1
 
 index = []
 list1.sort()
