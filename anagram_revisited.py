@@ -9,11 +9,11 @@ def is_anagram(s1,s2):
 
     # Edge case checking
     if len(s1) != len(s2):
-       return False
+        return False
 
     for letter in s1:
-       if s1.count(letter) != s2.count(letter):
-           return False
+        if s1.count(letter) != s2.count(letter):
+            return False
     return True
 
 from nose.tools import assert_equal
