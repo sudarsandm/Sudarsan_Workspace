@@ -6,3 +6,5 @@ echo 'Testing is_prime program'
 python3 is_prime.py
 echo 'Testing anagram_revisited program'
 python3 anagram_revisited.py
+echo 'Testing pair_sum program'
+python3 pair_sum.py
