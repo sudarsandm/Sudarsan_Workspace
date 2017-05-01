@@ -8,3 +8,4 @@ echo 'Testing anagram_revisited program'
 python3 anagram_revisited.py
 echo 'Testing pair_sum program'
 python3 pair_sum.py
+echo 'All Tests are done'
