@@ -4,12 +4,15 @@
 def finder(arr1,arr2):
    miss_item = 0
    for item in arr1:
-     if (arr2.count(item) == 0):
-	miss_item = item
-     else:
-        continue
-   
+      if (arr2.count(item) == 0):
+         miss_item = item
+      else:
+         continue
+      
    if (miss_item == 0):
-       return False
+      return False
    else:
-       return miss_item
+      return miss_item
+
+print(finder([1,4,3,2,5],[1,3,4,5]))
+print(finder([7,4,3,2,5],[7,3,2,5]))
