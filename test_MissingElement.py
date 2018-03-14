@@ -9,7 +9,7 @@ class TestFinder(unittest.TestCase):
         """
         self.assertEqual(finder([3,7,9,2], [2,7,9]), 3)
         self.assertEqual(finder([3,7,9,2], [3,7,9]), 2)
-        self.assertEqual(finder([3,7,9,2], [2,7,3]), 3)
+        self.assertNotEqual(finder([3,7,9,2], [2,7,3]), 3)
 
 if __name__ == '__main__':
     unittest.main()
