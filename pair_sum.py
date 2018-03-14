@@ -1,4 +1,8 @@
 def pair_sum(arr,num):
+        """
+        This function returns tuples of elements in a array which sum up to 
+        a passed key value.
+        """
 	# check if the number entered is much bigger than the elements of the list
 	list1 = sorted(arr,reverse=True)
 	if ((list1[0] + list1[1]) < num):
@@ -18,8 +22,3 @@ def pair_sum(arr,num):
 		else:
 			output.add((min(i,target),max(i,target)))
 	return list(output)
-# Run tests
-print("Testing pair sum function")
-print(pair_sum([1,3,2,2],4))
-print("Running another function")
-print(pair_sum([5,3,4,6,2,7],9))
