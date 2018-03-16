@@ -1,5 +1,6 @@
 import unittest
 from MissingElement import finder, finder_dict 
+import pytest
 
 class TestFinder(unittest.TestCase):
 
@@ -10,6 +11,7 @@ class TestFinder(unittest.TestCase):
         self.assertEqual(finder([3,7,9,2], [2,7,9]), 3)
         self.assertEqual(finder([3,7,9,2], [3,7,9]), 2)
         self.assertNotEqual(finder([3,7,9,2], [2,7,3]), 3)
+   
     def test_finder_dict(self):
         """
         This will test the dictionary based approach. 
