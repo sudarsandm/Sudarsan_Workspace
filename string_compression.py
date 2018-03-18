@@ -9,7 +9,7 @@ def compress(s):
     
     # Another Edge case check 
     if len(s) == 1:
-        return s
+        return s + '1'
     
     s = s.strip().rstrip()
     d = {}
