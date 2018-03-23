@@ -1,6 +1,5 @@
 import unittest
 from MissingElement import finder, finder_dict 
-import pytest
 
 class TestFinder(unittest.TestCase):
 

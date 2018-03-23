@@ -1,3 +1,19 @@
+def reverse_list(arr):
+    """
+    This function reverses a list using a temp variable.
+    This is defined to avoid code repetition.
+    """
+    length = int(len(arr)/2)
+    i = 0
+    
+    while i < length:
+        temp = arr[i]
+        arr[i] = arr[len(arr) - 1 - i]
+        arr[len(arr) - 1 - i] = temp
+        i += 1
+    return arr
+
+
 def reverse_using_temp(s):
     """
     This module uses a temporary variable to reverse the sentence.
@@ -8,14 +24,8 @@ def reverse_using_temp(s):
     #stripping the leading and trailing white spaces and split into words
     words = s.strip().rstrip().split()
 
-    length = int(len(words)/2)
-    i = 0
-
-    while i < length:
-        temp = words[i]
-        words[i] = words[len(words) -1 - i]
-        words[len(words) -1 -i] = temp
-        i += 1
+    # calling out the reverse_list function to reverse the words list
+    words = reverse_list(words)
 
     return " ".join(words)
 
@@ -34,6 +44,7 @@ def reverse_using_whitespace(s):
     i = 0
 
     while i < length:
+        # To check if we are in word boundary
         if s[i] not in space:
             word_start = i
             # increment i until we hit a space or word boundary
@@ -43,14 +54,7 @@ def reverse_using_whitespace(s):
             words.append(s[word_start:i])
         i += 1
 
-    j = 0
-    length = len(words)
-
-    # This code block is used to reverse the words
-    while j < int(length/2):
-        temp = words[j]
-        words[j] = words[length - 1 - j]
-        words[length - 1 - j] = temp
-        j += 1
+    # calling out the reverse_list function to reverse the words list
+    words = reverse_list(words)
     
     return " ".join(words)
