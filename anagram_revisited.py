@@ -44,6 +44,7 @@ def is_anagram1(s1,s2):
     # not anagrams.
     for key in count:
         if count[key] != 0:
+            print("{} and {}".format(key, count[key]))
             return False
 
     return True
@@ -56,3 +57,4 @@ print(is_anagram('121','122'))
 print("Testing is_anagram1 function")
 print(is_anagram1('g   o       d','D  o  G'))
 print(is_anagram('12112','122111'))
+print(is_anagram1('taylor','Tailor'))
